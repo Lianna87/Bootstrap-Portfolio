@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Pacifico-Regular;
+    src: url("../Fonts/Pacifico-Regular.ttf");
+}
+  
+@font-face {
+    font-family: JosefinSlab-VariableFont_wght;
+    src: url("../Fonts/JosefinSlab-VariableFont_wght.ttf");
+}
+  
+:root {
+
+}
+
+/* Navbar */
