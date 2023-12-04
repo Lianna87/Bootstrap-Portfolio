@@ -1,15 +1,91 @@
 @font-face {
-    font-family: Pacifico-Regular;
-    src: url("../Fonts/Pacifico-Regular.ttf");
+  font-family: Pacifico-Regular;
+  src: url("../Fonts/Pacifico-Regular.ttf");
 }
-  
-@font-face {
-    font-family: JosefinSlab-VariableFont_wght;
-    src: url("../Fonts/JosefinSlab-VariableFont_wght.ttf");
-}
-  
-:root {
 
+@font-face {
+  font-family: JosefinSlab-VariableFont_wght;
+  src: url("../Fonts/JosefinSlab-VariableFont_wght.ttf");
+}
+
+:root {
+  --golden: #ffc000;
+  --forestgreen: #014421;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Text */
+h1,
+h2,
+h4 {
+    font-family: pacifico-regular;
+    color: var(--golden);
+}
+
+h5, .card-title {
+    font-family: josefinSlab-VariableFont_wght;
+    color: var(--golden);
+    font-weight: 500;
+}
+
+p, li {
+    font-family: josefinSlab-VariableFont_wght;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    color: white;
 }
 
 /* Navbar */
+.custom-nav {
+    position: fixed;
+    width: 100%;
+    background: url("../images/transparency.png");
+    background-color: transparent !important;
+    background-size: cover;
+    z-index: 10;
+}
+
+
+.nav-item {
+    margin: 0px 15px;
+}
+
+.dropdown-menu {
+    background: url("../images/transparency.png");
+    background-color: transparent !important;
+    background-size: cover;
+}
+
+.custom-nav a {
+    color: white;
+    font-size: 20px;
+}
+
+.custom-nav a:hover {
+    color: var(--forestgreen);
+}
+.custom-nav a:focus {
+    color: var(--golden);
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    background-image: ;
+}
+/* My Work */
+
+/* About Me */
+
+/* Footer */
+footer {
+    background-color: var(--forestgreen);
+}
