@@ -53,15 +53,8 @@ ul {
     z-index: 10;
 }
 
-
 .nav-item {
     margin: 0px 15px;
-}
-
-.dropdown-menu {
-    background: url("../images/transparency.png");
-    background-color: transparent !important;
-    background-size: cover;
 }
 
 .custom-nav a {
