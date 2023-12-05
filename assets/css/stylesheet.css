@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: Futura-Book-Font;
+  src: url("../Fonts/Futura-Book-font.ttf");
+}
+
+@font-face {
   font-family: JosefinSlab-VariableFont_wght;
   src: url("../Fonts/JosefinSlab-VariableFont_wght.ttf");
 }
@@ -11,74 +16,149 @@
 :root {
   --golden: #ffc000;
   --forestgreen: #014421;
+  --white: white;
+  --text: Futura-Book-Font;
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* Text */
-h1,
-h2,
-h4 {
-    font-family: pacifico-regular;
-    color: var(--golden);
+h1 {
+  font-family: josefinSlab-VariableFont_wght;
+  color: var(--white);
+  font-size: 48px;
+  font-weight: 800;
 }
 
-h5, .card-title {
-    font-family: josefinSlab-VariableFont_wght;
+h2,
+h3,
+h4,
+h5 {
+  font-family: pacifico-regular;
+  color: var(--golden);
+}
+
+h6,
+.card-title {
+    font-family: var(--text);
     color: var(--golden);
     font-weight: 500;
 }
 
-p, li {
-    font-family: josefinSlab-VariableFont_wght;
-    color: white;
+p,
+li {
+    font-family: var(--text);
+    color: var(--white);
+}
+
+.mywork-title {
+    justify-content: center;
 }
 
 ul {
     list-style-type: none;
-    color: white;
+    color: var(--white);
+}
+
+.card-title {
+    color: var(--forestgreen);
+}
+
+.card-text {
+    font-family: var(--text);
+    color: black;
+}
+
+.main-body {
+    background-color: black;
+}
+
+/* Buttons */
+.btn {
+  background-color: var(--golden);
+  align-items: end;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.btn:hover {
+  background-color: rgb(8, 80, 8);
+}
+
+.btn:active {
+  box-shadow: 2px 2px 5px rgb(46, 45, 45);
 }
 
 /* Navbar */
 .custom-nav {
-    position: fixed;
-    width: 100%;
-    background: url("../images/transparency.png");
-    background-color: transparent !important;
-    background-size: cover;
-    z-index: 10;
+  position: fixed;
+  width: 100%;
+  background: url("../images/transparency.png");
+  background-color: transparent !important;
+  background-size: cover;
+  z-index: 10;
 }
 
 .nav-item {
-    margin: 0px 15px;
+  margin: 0px 15px;
 }
 
 .custom-nav a {
-    color: white;
-    font-size: 20px;
+  color: white;
+  font-size: 20px;
 }
 
 .custom-nav a:hover {
-    color: var(--forestgreen);
+  color: var(--forestgreen);
 }
 .custom-nav a:focus {
-    color: var(--golden);
+  color: var(--golden);
 }
 
 /* Jumbotron */
 
 .jumbotron {
-    background-image: ;
+  background-image: url("../images/jumbotron-gradient-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 100%;
+  height: 600px;
 }
+
+.jumbotron .container {
+    position:relative;
+  }
+
+.jumbotron h1,
+p {
+  padding: 10px;
+}
+
 /* My Work */
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
 
 /* About Me */
 
 /* Footer */
 footer {
-    background-color: var(--forestgreen);
+  background-color: var(--forestgreen);
 }
