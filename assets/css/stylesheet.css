@@ -28,18 +28,32 @@
 
 /* Text */
 h1 {
-  font-family: josefinSlab-VariableFont_wght;
-  color: var(--white);
-  font-size: 48px;
-  font-weight: 800;
+    font-family: josefinSlab-VariableFont_wght;
+    color: var(--white);
+    font-size: 60px;
+    font-weight: 600;
 }
 
-h2,
-h3,
-h4,
+h2 {
+    font-family: pacifico-regular;
+    color: var(--golden);
+    font-size: 90px;
+}
+
+h3 {
+    font-family: pacifico-regular;
+    color: var(--golden);
+    padding: 45px;
+    font-size: 45px;
+    text-align: center;
+}
+
+
 h5 {
-  font-family: pacifico-regular;
-  color: var(--golden);
+    font-family: pacifico-regular;
+    color: var(--golden);
+    padding: 45px;
+    font-size: 45px;
 }
 
 h6,
@@ -80,10 +94,10 @@ ul {
 /* Buttons */
 .btn {
   background-color: var(--golden);
-  align-items: end;
+  align-items: center;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 0px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -130,15 +144,15 @@ ul {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/jumbotron-gradient-img.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
+    background-image: url("../images/jumbotron-gradient-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
     align-items: center;
     justify-content: center;
-  width: 100%;
-  height: 600px;
+    width: 100%;
+    height: 700px;
 }
 
 .jumbotron .container {
@@ -150,7 +164,17 @@ p {
   padding: 10px;
 }
 
+.container p {
+    font-size: 22px;
+}
+
 /* My Work */
+.card-img-top {
+    width: 100%;
+    height: 14vw;
+    object-fit: cover;
+}
+
 img {
   overflow-clip-margin: content-box;
   overflow: clip;
