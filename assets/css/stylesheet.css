@@ -52,7 +52,7 @@ h3 {
 h5 {
     font-family: pacifico-regular;
     color: var(--golden);
-    padding: 45px;
+    padding: 60px 45px 45px 45px;
     font-size: 45px;
 }
 
@@ -64,18 +64,28 @@ h6,
 }
 
 p,
-li {
+.nav-bar li {
     font-family: var(--text);
     color: var(--white);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.skills-list li {
+    font-family: JosefinSlab-VariableFont_wght;
+    font-size: 20px;
+    font-weight: 300px;
 }
 
 .mywork-title {
     justify-content: center;
+    padding: 120px 20px 60px 20px;
 }
 
 ul {
     list-style-type: none;
     color: var(--white);
+    line-height: 3.5;
 }
 
 .card-title {
@@ -94,6 +104,8 @@ ul {
 /* Buttons */
 .btn {
   background-color: var(--golden);
+  height: 36px;
+  width: 118px;
   align-items: center;
   color: white;
   border: none;
@@ -108,11 +120,21 @@ ul {
 }
 
 .btn:hover {
-  background-color: rgb(8, 80, 8);
+    background-color: rgb(8, 80, 8);
+    color: white;
 }
 
 .btn:active {
-  box-shadow: 2px 2px 5px rgb(46, 45, 45);
+    background-color: rgb(8, 80, 8);
+    box-shadow: 2px 2px 5px rgb(46, 45, 45);
+    color: white;
+}
+
+.btn-primary {
+    height: 40px;
+    width: 120px;
+    font-size: 18px;
+    margin: 20px;
 }
 
 /* Navbar */
@@ -141,6 +163,15 @@ ul {
   color: var(--golden);
 }
 
+.custom-nav a:active {
+    color: var(--golden);
+  }
+
+.navbar-brand img {
+    padding-right: 5px;
+    width: 75px;
+  }
+
 /* Jumbotron */
 
 .jumbotron {
@@ -157,7 +188,7 @@ ul {
 
 .jumbotron .container {
     position:relative;
-  }
+}
 
 .jumbotron h1,
 p {
@@ -181,7 +212,9 @@ img {
 }
 
 /* About Me */
-
+.col {
+    padding: 40px 20px;
+}
 /* Footer */
 footer {
   background-color: var(--forestgreen);
