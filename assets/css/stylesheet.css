@@ -15,7 +15,7 @@
 
 :root {
   --golden: #ffc000;
-  --forestgreen: #014421;
+  --forestgreen: #085008;
   --white: white;
   --text: Futura-Book-Font;
 }
@@ -132,12 +132,12 @@ label {
 }
 
 .btn:hover {
-    background-color: rgb(8, 80, 8);
+    background-color: var(--forestgreen);
     color: white;
 }
 
 .btn:active {
-    background-color: rgb(8, 80, 8);
+    background-color: var(--forestgreen);
     box-shadow: 2px 2px 5px rgb(46, 45, 45);
     color: white;
 }
@@ -229,6 +229,30 @@ img {
 }
 
 /* contact Me */
+
+.contact-title {
+    padding: 100px 20px 40px 20px;
+}
+
+.contact-details li,
+.contact-details a {
+    font-family: var(--text);
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: none;
+    text-align: center;
+    line-height: 3;
+    color: white;
+}
+
+.contact-details a:hover {
+    color: var(--forestgreen);
+}
+
+span {
+    font-family: JosefinSlab-VariableFont_wght;
+    font-weight: 400;
+}
 .text-box {
     width: 75%;
     height: 35px;
@@ -259,8 +283,14 @@ textarea {
 
 /* Footer */
 footer {
-  background-color: var(--forestgreen);
+  background-color: #014421;
   justify-content: center;
   text-align: center;
   padding: 20px 10px 10px 20px;
 }
+
+.footer p {
+    padding: 5px 10px 10px 10px;
+    font-size: 14px;
+  }
+  
