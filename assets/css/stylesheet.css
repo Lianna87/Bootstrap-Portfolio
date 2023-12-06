@@ -52,7 +52,7 @@ h3 {
 h5 {
     font-family: pacifico-regular;
     color: var(--golden);
-    padding: 60px 45px 45px 45px;
+    padding: 60px 45px 20px 45px;
     font-size: 45px;
 }
 
@@ -286,11 +286,11 @@ footer {
   background-color: #014421;
   justify-content: center;
   text-align: center;
-  padding: 20px 10px 10px 20px;
+  padding: 5px;
 }
 
 .footer p {
-    padding: 5px 10px 10px 10px;
-    font-size: 14px;
+    padding: 5px;
+    font-size: 12px;
   }
   
