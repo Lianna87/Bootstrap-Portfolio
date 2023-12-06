@@ -56,13 +56,18 @@ h5 {
     font-size: 45px;
 }
 
-h6,
+
 .card-title {
     font-family: var(--text);
     color: var(--golden);
     font-weight: 500;
 }
 
+h6 {
+    font-family: pacifico-regular;
+    color: var(--golden);
+    padding: 10px;
+}
 p,
 .nav-bar li {
     font-family: var(--text);
@@ -99,6 +104,13 @@ ul {
 
 .main-body {
     background-color: black;
+}
+
+label {
+    font-family: Futura-Book-Font;
+    font-size: 16px;
+    font-weight: 160;
+    color: white;
 }
 
 /* Buttons */
@@ -215,7 +227,40 @@ img {
 .col {
     padding: 40px 20px;
 }
+
+/* contact Me */
+.text-box {
+    width: 75%;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 12px 12px;
+    margin: 10px 0px 20px;
+    border: 2px solid var(--forestgreen);
+    border-radius: 6px;
+}
+
+textarea {
+    width: 75%;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 12px 12px;
+    margin: 10px 0px;
+    border: 2px solid var(--forestgreen);
+    border-radius: 6px;
+}
+
+.contact-item input:hover {
+    border: 3px solid var(--forestgreen);
+}
+
+.contact-item textarea:hover {
+    border: 3px solid var(--forestgreen);
+}
+
 /* Footer */
 footer {
   background-color: var(--forestgreen);
+  justify-content: center;
+  text-align: center;
+  padding: 20px 10px 10px 20px;
 }

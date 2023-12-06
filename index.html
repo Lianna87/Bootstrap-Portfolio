@@ -162,8 +162,8 @@
 
       <section class="container body-container text-center" id="contact-me">
             <div class="row">
+                <h5>Contact Me</h5>
                 <div class="col">
-                    <h5>Contact Me</h5>
                     <ul class="contact-details">
                         <li>
                             <span>Email:</span>
@@ -181,6 +181,31 @@
                             <a href="https://github.com/Lianna87" target="_blank"> Lianna87 </a>
                         </li>
                     </ul>
+                </div>
+
+                <div class="col contact-box">
+                    <div class="contact-item" id="form">
+                        <form action="/action_page.php">
+                          <label for="fname">Name:</label>
+                          <br />
+                          <input class="text-box" type="text" id="fname" name="fname" />
+                          <br />
+                          <label for="email">Email address:</label>
+                          <br />
+                          <input class="text-box" type="email" id="email" name="email" />
+                          <br />
+                          <label for="message">Message:</label>
+                          <br />
+                          <textarea
+                            rows="4"
+                            cols="50"
+                            name="comment"
+                            form="usrform"
+                          ></textarea>
+                          <br />
+                          <button type="submit" value="Submit" class="btn">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
       </section>    
